@@ -15,8 +15,8 @@ type
     constructor Create;
     destructor Destroy; override;
     procedure LoadFromFile(const AFileName: string); overload;
-    procedure SaveToFile(const AFileName: string); overload;
     procedure LoadFromFile(const AFileName: string; AEncoding: TEncoding); overload;
+    procedure SaveToFile(const AFileName: string); overload;
     procedure SaveToFile(const AFileName: string; AEncoding: TEncoding); overload;
     function Add(const AString: string): Integer;
     procedure Clear;

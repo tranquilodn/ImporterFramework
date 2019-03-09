@@ -35,7 +35,7 @@
         <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
-        <DCC_DcuOutput>.</DCC_DcuOutput>
+        <DCC_DcuOutput>DCU</DCC_DcuOutput>
         <DCC_ExeOutput>.\$(Platform)\$(Config)</DCC_ExeOutput>
         <DCC_E>false</DCC_E>
         <DCC_N>false</DCC_N>
@@ -65,6 +65,8 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Manifest_File>(None)</Manifest_File>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -77,30 +79,23 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="..\Framework\DataValidators.TBooleanDataValidator.pas"/>
-        <DCCReference Include="..\Framework\Interfaces.IDataValidator.pas"/>
         <DCCReference Include="Framework\DataValidators.TestSuite.pas"/>
         <DCCReference Include="..\Framework\DataValidators.TCurrencyDataValidator.pas"/>
         <DCCReference Include="..\Framework\DataValidators.TDateTimeDataValidator.pas"/>
         <DCCReference Include="..\Framework\DataValidators.TIntegerDataValidator.pas"/>
         <DCCReference Include="..\Framework\DataValidators.TNumericDataValidator.pas"/>
         <DCCReference Include="..\Framework\DataValidators.TStringDataValidator.pas"/>
-        <DCCReference Include="..\Framework\Interfaces.IValidationRule.pas"/>
         <DCCReference Include="..\Framework\ValidationRules.TIsEmptyValidationRule.pas"/>
         <DCCReference Include="..\Framework\ValidationRules.TDataTypeValidationRule.pas"/>
         <DCCReference Include="..\Framework\EnumClasses.TDataType.pas"/>
         <DCCReference Include="..\Framework\ValidationRules.TMaxLengthValidationRule.pas"/>
         <DCCReference Include="Framework\ValidationRules.TestSuite.pas"/>
-        <DCCReference Include="..\Framework\Interfaces.IField.pas"/>
         <DCCReference Include="..\Framework\DataContainers.TField.pas"/>
-        <DCCReference Include="..\Framework\Interfaces.IRecord.pas"/>
         <DCCReference Include="..\Framework\Utils.TArrayUtil.pas"/>
         <DCCReference Include="Framework\DataContainers.TestSuite.pas"/>
         <DCCReference Include="..\Framework\DataContainers.TRecord.pas"/>
         <DCCReference Include="..\Framework\Exceptions.EFieldNameMustBeUniqueException.pas"/>
-        <DCCReference Include="..\Framework\Interfaces.IFile.pas"/>
         <DCCReference Include="..\Framework\DataContainers.TFile.pas"/>
-        <DCCReference Include="..\Framework\Interfaces.ISource.pas"/>
-        <DCCReference Include="..\Framework\Interfaces.IDestination.pas"/>
         <DCCReference Include="..\Framework\Definition.TCSVFileDefinition.pas"/>
         <DCCReference Include="..\Framework\Framework.Interfaces.pas"/>
         <BuildConfiguration Include="Release">
@@ -123,6 +118,10 @@
                 <Source>
                     <Source Name="MainSource">AppExampleTests.dpr</Source>
                 </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k260.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp260.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
                 <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">

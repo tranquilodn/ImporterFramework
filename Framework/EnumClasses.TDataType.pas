@@ -3,7 +3,7 @@ unit EnumClasses.TDataType;
 interface
 
 type
-  TDataType = class
+  TDataType = record
   const
     dtBoolean = 'Boolean';
     dtCurrency = 'Currency';

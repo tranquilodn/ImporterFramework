@@ -4,7 +4,7 @@ interface
 
 uses
   TestFramework, System.SysUtils, System.Variants,
-  Interfaces.IValidationRule,
+  Framework.Interfaces,
   EnumClasses.TDataType,
   ValidationRules.TIsEmptyValidationRule,
   ValidationRules.TMaxLengthValidationRule,

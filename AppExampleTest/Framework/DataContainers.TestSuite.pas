@@ -4,7 +4,7 @@ interface
 
 uses
   TestFramework, System.SysUtils, ValidationRules.TDataTypeValidationRule,
-  System.Variants, Utils.TArrayUtil, Interfaces.IField, Interfaces.IValidationRule,
+  System.Variants, Utils.TArrayUtil, Framework.Interfaces,
   DataContainers.TField, ValidationRules.TMaxLengthValidationRule,
   ValidationRules.TIsEmptyValidationRule;
 

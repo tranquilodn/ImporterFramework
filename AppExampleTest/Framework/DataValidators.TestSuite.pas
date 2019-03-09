@@ -4,7 +4,7 @@ interface
 
 uses
   TestFramework, System.SysUtils, System.Variants,
-  Interfaces.IDataValidator,
+  Framework.Interfaces,
   DataValidators.TBooleanDataValidator,
   DataValidators.TCurrencyDataValidator,
   DataValidators.TDateTimeDataValidator,
