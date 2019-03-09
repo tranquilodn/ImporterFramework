@@ -5,8 +5,6 @@ interface
 uses
   System.SysUtils, System.Variants, System.Generics.Collections,
   Framework.Interfaces,
-  Interfaces.IRecord,
-  Interfaces.IFile,
   DataContainers.TFile;
 
 type

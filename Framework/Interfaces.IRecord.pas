@@ -4,7 +4,7 @@ interface
 
 uses
   System.SysUtils,
-  Interfaces.IField;
+  Framework.Interfaces;
 
 type
   IRecord = interface(IInterface)

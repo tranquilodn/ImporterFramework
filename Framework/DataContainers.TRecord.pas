@@ -5,8 +5,7 @@ interface
 uses
   System.SysUtils, System.Variants,
   Utils.TArrayUtil,
-  Interfaces.IRecord,
-  Interfaces.IField,
+  Framework.Interfaces,
   Exceptions.EFieldNameMustBeUniqueException;
 
 type

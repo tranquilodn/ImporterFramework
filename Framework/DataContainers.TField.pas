@@ -4,8 +4,7 @@ interface
 
 uses
   System.SysUtils, System.Variants, Utils.TArrayUtil,
-  Interfaces.IField,
-  Interfaces.IValidationRule,
+  Framework.Interfaces,
   ValidationRules.TIsEmptyValidationRule,
   ValidationRules.TDataTypeValidationRule,
   ValidationRules.TMaxLengthValidationRule;

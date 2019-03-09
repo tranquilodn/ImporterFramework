@@ -4,7 +4,7 @@ interface
 
 uses
   System.SysUtils, System.Variants,
-  Interfaces.IDataValidator;
+  Framework.Interfaces;
 
 type
   TNumericDataValidator = class(TInterfacedObject, IDataValidator)

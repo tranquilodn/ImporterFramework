@@ -4,7 +4,7 @@ interface
 
 uses
   System.SysUtils, System.Variants,
-  Interfaces.IValidationRule;
+  Framework.Interfaces;
 
 type
   TMaxLengthValidationRule = class(TInterfacedObject, IValidationRule)

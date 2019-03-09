@@ -4,8 +4,7 @@ interface
 
 uses
   System.SysUtils, System.Variants,
-  Interfaces.IValidationRule,
-  Interfaces.IDataValidator,
+  Framework.Interfaces,
   EnumClasses.TDataType,
   DataValidators.TBooleanDataValidator,
   DataValidators.TCurrencyDataValidator,
