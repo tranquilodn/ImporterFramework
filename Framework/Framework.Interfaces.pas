@@ -1,4 +1,4 @@
-unit Interfaces.IDefinition;
+unit Framework.Interfaces;
 
 interface
 
