@@ -68,13 +68,12 @@ function TRecord.FieldNameAlreadyExists(const AFieldName: String): Boolean;
 var
   Index: Integer;
 begin
-  Result := False;
   for Index := 0 to Length(FFields) - 1 do
-    if UpperCase(Trim(FFields[Index].Name)) = UpperCase(Trim(AFieldName)) then
-    begin
-      Result := True;
+  begin
+    Result := UpperCase(Trim(FFields[Index].Name)) = UpperCase(Trim(AFieldName));
+    if Result then
       Break;
-    end;
+  end;
 end;
 
 function TRecord.GetFields: TArray<IField>;

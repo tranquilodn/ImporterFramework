@@ -18,7 +18,7 @@ type
   TDataTypeValidationRule = class(TInterfacedObject, IValidationRule)
   const
     INVALID_DATATYPE_MESSAGE = 'Invalid data type';
-  strict private
+  private
     FDataValidator: IDataValidator;
     FDataType: String;
     FAcceptEmpty: Boolean;

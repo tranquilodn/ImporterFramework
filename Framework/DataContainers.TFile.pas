@@ -4,7 +4,7 @@ interface
 
 uses
   System.SysUtils, System.Classes,
-  Interfaces.IFile;
+  Framework.Interfaces;
 
 type
   TFile = class(TInterfacedObject, IFIle)

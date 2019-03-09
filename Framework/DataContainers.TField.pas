@@ -12,7 +12,7 @@ uses
 
 type
   TField = class(TInterfacedObject, IField)
-  strict private
+  private
     FDestinationFieldName: String;
     FValidationRules: TArray<IValidationRule>;
     FIsValid: Boolean;

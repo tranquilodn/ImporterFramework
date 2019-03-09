@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2018/09/15 10:55:37.733,D:\Delphi\Projects\ImporterFramework\ImporterFramework.groupproj=D:\Delphi\Projects\ProjectGroup1.groupproj</Transaction>
+	<Transactions>
+    <Transaction>2018/09/15 10:55:37.000.733,D:\Delphi\Projects\ProjectGroup1.groupproj=D:\Delphi\Projects\ImporterFramework\ImporterFramework.groupproj</Transaction>
   </Transactions>
-  <Default.Personality>
-    <Projects ActiveProject="D:\Delphi\Projects\ImporterFramework\AppExampleTest\AppExampleTests.dproj"/>
-  </Default.Personality>
+	<Default.Personality>
+		<Projects ActiveProject="D:\DelphiProjects\ImporterFramework\AppExample\AppExample.dproj"/>
+	</Default.Personality>
 </BorlandProject>

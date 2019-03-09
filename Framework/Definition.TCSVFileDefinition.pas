@@ -4,8 +4,7 @@ interface
 
 uses
   System.SysUtils, System.Variants, System.Generics.Collections,
-  Interfaces.IDefinition,
-  Interfaces.IField,
+  Framework.Interfaces,
   Interfaces.IRecord,
   Interfaces.IFile,
   DataContainers.TFile;

@@ -29,10 +29,10 @@ uses
   Exceptions.EFieldNameMustBeUniqueException in '..\Framework\Exceptions.EFieldNameMustBeUniqueException.pas',
   Interfaces.IFile in '..\Framework\Interfaces.IFile.pas',
   DataContainers.TFile in '..\Framework\DataContainers.TFile.pas',
-  Interfaces.IDefinition in '..\Framework\Interfaces.IDefinition.pas',
   Interfaces.ISource in '..\Framework\Interfaces.ISource.pas',
   Interfaces.IDestination in '..\Framework\Interfaces.IDestination.pas',
-  Definition.TCSVFileDefinition in '..\Framework\Definition.TCSVFileDefinition.pas';
+  Definition.TCSVFileDefinition in '..\Framework\Definition.TCSVFileDefinition.pas',
+  Framework.Interfaces in '..\Framework\Framework.Interfaces.pas';
 
 {R *.RES}
 
