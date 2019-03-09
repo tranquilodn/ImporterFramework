@@ -71,3 +71,4 @@ modules/
 # Miscelaneous files.
 *.xml
 *.txaPackage
+*.ini
